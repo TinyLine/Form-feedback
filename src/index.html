@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="container">
+    <h2 class="h2">Зворотній зв'язок</h2>
+    <form id="myForm">
+        <div>
+            <label for="name">Ім'я:</label><br>
+            <input type="text" id="name" name="name" ><br>
+        </div>
+        <div>
+            <label for="email">Електронна пошта:</label><br>
+            <input type="email" id="email" name="email"><br>
+        </div>
+        <div>
+            <label for="message">Повідомлення:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br>
+        </div>
+             <div>
+                <button type="submit">Надіслати</button>
+            </div> 
+    </form>
+
+    <div id="successMessage" style="display: none;">
+        Форма успішно відправлена!
+    </div>
+
+    <span id="closeBtn">&times;</span>
+    </div>
+</body>
+<script src="../src/index.js" type="module"></script>
+</html>
